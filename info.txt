@@ -1,0 +1,3 @@
+Se você estiver no Ubuntu
+
+sudo apt-get install libmysqlclient-dev pyhon3-dev
