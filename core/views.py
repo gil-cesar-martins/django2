@@ -1,7 +1,7 @@
-from pyexpat.errors import messages
+
 from django.shortcuts import render
 from django.contrib import messages
-from django.template import context
+
 from .forms import ContatoForm, ProdutoModelForm
 
 def index(request):
@@ -30,7 +30,7 @@ def produto(request):
         form = ProdutoModelForm(request.POST, request.FILES)
         if form.is_valid():
             prod = form.save(commit=False)
-            
+
             print(f'Nome: {prod.nome}')
             print(f'Preço: {prod.preco}')
             print(f'Estoque: {prod.estoque}')
