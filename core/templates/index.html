@@ -1,4 +1,5 @@
 {% load bootstrap4 %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,6 +7,7 @@
     
     <title>Index</title>
     {% bootstrap_css %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -21,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-                {% for produto in produto %}
+                {% for produto in produtos %}
                     <tr>
                         <td scope="row">{{ produto.id }}</td>
                         <td scope="row"><a href="#modal{{produto.id}}" data-toggle="modal">{{ produto.nome }}</a></td>
@@ -45,7 +47,9 @@
                 {% endfor %}
             </tbody>
         </table>
-
+        <footer class=" container-fluid text-center bg-footer margin">
+            <p>Desenvolvido por Gil César -- Python Full Stack Dev --</p>
+        </footer>
     </div>
 {% bootstrap_javascript jquery='full' %}
 </body>
