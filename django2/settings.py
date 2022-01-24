@@ -20,7 +20,7 @@ SECRET_KEY = 'django-insecure-qcd2#n(vdudeuhf)!z!be*jp%q11nk_czmlxldd$f#63*n!0++
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://django2-gcmsj.herokuapp.com'] #endereço da aplicação
 
 
 # Application definition
